@@ -1,0 +1,174 @@
+    
+    :root {
+      --primary: #1a6fc9;
+      --danger: #ff6661;
+      --background: #0d1117;
+      --surface: #161b22;
+      --text: #c9d1d9;
+      --accent: #ffffff;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a6fc9, #0f4c81);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0 0 10px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background: var(--surface);
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+      border-left: 4px solid var(--accent);
+      padding-left: 15px;
+      color: var(--accent);
+    }
+
+    .fact-box {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 5px solid var(--accent);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .image-container img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto;
+}
+
+    .image-container p {
+      font-style: italic;
+      color: #999;
+      margin-top: 10px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+    }
+
+    .stat-card h3 {
+      font-size: 2em;
+      margin: 0;
+      color: var(--danger);
+    }
+
+    .stat-card p {
+      margin-top: 10px;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+    }
+
+    .call-to-action {
+      background: var(--danger);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+
+    .call-to-action .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: white;
+      color: var(--danger);
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1.2em;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      letter-spacing: 1px;
+    }
+
+    .call-to-action .btn:hover {
+      background-color: var(--background);
+      color: white;
+      border: 1px solid white;
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px auto 20px;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #888;
+      border-top: 1px solid var(--border);
+      max-width: 1000px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      .stat-card h3 {
+        font-size: 1.6em;
+      }
+    }
